@@ -2,6 +2,9 @@ cask_args appdir: '/Applications'
 
 tap 'caskroom/cask'
 
+brew 'python'
+
+brew 'cmake'
 brew 'docker'
 brew 'docker-compose'
 brew 'docker-machine'
@@ -9,7 +12,6 @@ brew 'git'
 brew 'go'
 brew 'macvim'
 brew 'nvm'
-brew 'python'
 brew 'rbenv'
 brew 'the_silver_searcher'
 brew 'tig'
