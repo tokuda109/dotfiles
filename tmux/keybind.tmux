@@ -63,10 +63,11 @@ bind b break-pane
 
 # ペインの移動
 # Shift + 上下左右でペインを移動できるようにする。
-# bind -n S-left select-pane -L
-# bind -n S-down select-pane -D
-# bind -n S-up select-pane -U
-# bind -n S-right select-pane -R
+bind -n S-left select-pane -L
+bind -n S-down select-pane -D
+bind -n S-up select-pane -U
+bind -n S-right select-pane -R
+
 set -g xterm-keys on
 
 # ウィンドウ終了
