@@ -1603,7 +1603,7 @@
 	<key>PrefsCustomFolder</key>
 	<string>~/dotfiles/iterm2</string>
 	<key>PromptOnQuit</key>
-	<true/>
+	<false/>
 	<key>QuitWhenAllWindowsClosed</key>
 	<false/>
 	<key>RightCommand</key>
