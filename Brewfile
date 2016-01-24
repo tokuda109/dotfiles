@@ -1,6 +1,7 @@
 cask_args appdir: '/Applications'
 
 tap 'caskroom/cask'
+tap 'caskroom/versions'
 
 brew 'python'
 
@@ -31,6 +32,7 @@ cask 'evernote'
 cask 'firefox'
 cask 'github-desktop'
 cask 'google-chrome'
+cask 'google-chrome-canary'
 cask 'google-japanese-ime'
 cask 'heroku-toolbelt'
 cask 'iterm2'
