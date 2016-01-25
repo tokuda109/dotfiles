@@ -26,6 +26,12 @@ set showmatch
 " 現在行をハイライト
 set cursorline
 
+" 次のタブに切り替え
+noremap <Tab> gt
+
+" 前のタブに切り替え
+noremap <S-Tab> gT
+
 colorscheme Wombat
 
 syntax enable

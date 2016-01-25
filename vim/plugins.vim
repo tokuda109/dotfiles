@@ -15,3 +15,8 @@ let g:NERDTreeDirArrowCollapsible = '▾'
 
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
+
+" Emmet
+" ------------------------------------------------------------------------------
+
+let g:user_emmet_expandabbr_key = '<C-z>'
