@@ -28,6 +28,9 @@ NeoBundle "Valloric/YouCompleteMe"
 
 NeoBundle "mattn/emmet-vim"
 
+NeoBundle "othree/html5.vim"
+NeoBundle "othree/yajs.vim"
+
 call neobundle#end()
 
 NeoBundleCheck
