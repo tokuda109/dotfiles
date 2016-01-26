@@ -11,6 +11,9 @@
 ## 履歴の設定
 [[ -f ~/.zsh/history.zsh ]] && source ~/.zsh/history.zsh
 
+## プロンプトの設定
+[[ -f ~/.zsh/prompt.zsh ]] && source ~/.zsh/prompt.zsh
+
 ## Goの設定
 [[ -f ~/.zsh/go.zsh ]] && source ~/.zsh/go.zsh
 

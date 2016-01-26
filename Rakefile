@@ -48,6 +48,21 @@ namespace :install do
   end
 
   task :zsh do
+    if ! File.exist?(ENV["HOME"] + '/.zlogin')
+      sh "ln -s `pwd`/zlogin ~/.zlogin"
+    end
+    if ! File.exist?(ENV["HOME"] + '/.zlogout')
+      sh "ln -s `pwd`/zlogout ~/.zlogout"
+    end
+    if ! File.exist?(ENV["HOME"] + '/.zpreztorc')
+      sh "ln -s `pwd`/zpreztorc ~/.zpreztorc"
+    end
+    if ! File.exist?(ENV["HOME"] + '/.zprofile')
+      sh "ln -s `pwd`/zprofile ~/.zprofile"
+    end
+    if ! File.exist?(ENV["HOME"] + '/.zshenv')
+      sh "ln -s `pwd`/zshenv ~/.zshenv"
+    end
     if ! File.exist?(ENV["HOME"] + '/.zshrc')
       sh "ln -s `pwd`/zshrc ~/.zshrc"
     end
