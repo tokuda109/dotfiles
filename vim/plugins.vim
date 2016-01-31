@@ -7,10 +7,11 @@
 
 autocmd vimenter * NERDTree
 
-let g:NERDTreeDirArrowExpandable = '▸'
-let g:NERDTreeDirArrowCollapsible = '▾'
-
 let NERDTreeShowHidden = 1
+let NERDTreeIgnore = [
+  \ '\.pyc$',
+  \ '\.pyo$'
+  \]
 
 " CtrlP
 " ------------------------------------------------------------------------------
