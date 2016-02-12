@@ -5,6 +5,9 @@
 ## エイリアスの設定
 [[ -f ~/.zsh/alias.zsh ]] && source ~/.zsh/alias.zsh
 
+## スクリプト系の設定
+[[ -f ~/.zsh/script.zsh ]] && source ~/.zsh/script.zsh
+
 ## PATHの設定
 [[ -f ~/.zsh/path.zsh ]] && source ~/.zsh/path.zsh
 
