@@ -1,4 +1,9 @@
 
+export EDITOR=vim
+
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+
 # ディレクトリ名と一致した場合にカレントディレクトリを変更する
 setopt auto_cd
 
