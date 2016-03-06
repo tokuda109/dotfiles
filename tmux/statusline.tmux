@@ -29,7 +29,7 @@ set-option -g status-bg black
 # ステータス行 - 左側
 set-option -g status-left-fg default
 set-option -g status-left-bg default
-set-option -g status-left "🐍 #(whoami)@#(hostname -s) "
+set-option -g status-left "🐍 #(whoami)@#(hostname -s) ʕ ◔ϖ◔ʔ "
 # 表示領域の最大長
 set-option -g status-left-length 50
 
