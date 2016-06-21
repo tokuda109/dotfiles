@@ -2,9 +2,6 @@
 # 基本設定
 # ==============================================================================
 
-# UTF-8を有効にする。
-set-window-option -g utf8 on
-
 # Escを打ったあとの待ち時間。
 # http://qiita.com/catatsuy/items/db0a471bf1eabaa21c36
 set-option -s escape-time 0

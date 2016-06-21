@@ -6,8 +6,6 @@
 
 set-option -g status on
 
-set-option -g status-utf8 on
-
 # ステータス行の更新間隔
 set-option -g status-interval 2
 
@@ -36,6 +34,6 @@ set-option -g status-left-length 50
 # ステータス行 - 右側
 set-option -g status-right-fg default
 set-option -g status-right-bg default
-set-option -g status-right "Mem: #(~/dotfiles/bin/memory) %y/%m/%d(%a)%H:%M"
+set-option -g status-right "Continuum: #{continuum_status} Mem: #(~/dotfiles/bin/memory) %y/%m/%d (%a) %H:%M"
 # 表示領域の最大長
 set-option -g status-right-length 100
