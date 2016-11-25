@@ -1,30 +1,34 @@
 
 ## 基本設定
-[[ -f ~/.zsh/base.zsh ]] && source ~/.zsh/base.zsh
+[[ -f $HOME/.zsh/base.zsh ]] && source $HOME/.zsh/base.zsh
 
 ## エイリアスの設定
-[[ -f ~/.zsh/alias.zsh ]] && source ~/.zsh/alias.zsh
+[[ -f $HOME/.zsh/alias.zsh ]] && source $HOME/.zsh/alias.zsh
 
 ## スクリプト系の設定
-[[ -f ~/.zsh/script.zsh ]] && source ~/.zsh/script.zsh
+[[ -f $HOME/.zsh/script.zsh ]] && source $HOME/.zsh/script.zsh
 
 ## PATHの設定
-[[ -f ~/.zsh/path.zsh ]] && source ~/.zsh/path.zsh
+## [[ -f $HOME/.zsh/path.zsh ]] && source $HOME/.zsh/path.zsh
 
 ## 履歴の設定
-[[ -f ~/.zsh/history.zsh ]] && source ~/.zsh/history.zsh
+[[ -f $HOME/.zsh/history.zsh ]] && source $HOME/.zsh/history.zsh
 
 ## プロンプトの設定
-[[ -f ~/.zsh/prompt.zsh ]] && source ~/.zsh/prompt.zsh
+[[ -f $HOME/.zsh/prompt.zsh ]] && source $HOME/.zsh/prompt.zsh
 
 ## Goの設定
-[[ -f ~/.zsh/go.zsh ]] && source ~/.zsh/go.zsh
+[[ -f $HOME/.zsh/go.zsh ]] && source $HOME/.zsh/go.zsh
 
 ## Node.jsの設定
-[[ -f ~/.zsh/nvm.zsh ]] && source ~/.zsh/nvm.zsh
+[[ -f $HOME/.zsh/nvm.zsh ]] && source $HOME/.zsh/nvm.zsh
 
 ## Pythonの設定
-[[ -f ~/.zsh/python.zsh ]] && source ~/.zsh/python.zsh
+[[ -f $HOME/.zsh/python.zsh ]] && source $HOME/.zsh/python.zsh
 
 ## Rubyの設定
-[[ -f ~/.zsh/rbenv.zsh ]] && source ~/.zsh/rbenv.zsh
+[[ -f $HOME/.zsh/rbenv.zsh ]] && source $HOME/.zsh/rbenv.zsh
+
+## gcloud
+[[ -f $HOME/google-cloud-sdk/path.zsh.inc ]] && source $HOME/google-cloud-sdk/path.zsh.inc
+[[ -f $HOME/google-cloud-sdk/completion.zsh.inc ]] && source $HOME/google-cloud-sdk/completion.zsh.inc
