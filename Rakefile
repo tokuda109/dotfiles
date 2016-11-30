@@ -5,6 +5,7 @@ task :default => 'install'
 
 desc 'Install dotfiles'
 task install: [
+  'install:git',
   'install:tmux',
   'install:vim',
   'install:zsh'

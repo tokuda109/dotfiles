@@ -1,6 +1,6 @@
 
-" Vundleの設定
-source ~/.vim/vundle.vim
+" Dein.vimの設定
+source ~/.vim/dein.vim
 
 " 基本設定
 source ~/.vim/base.vim

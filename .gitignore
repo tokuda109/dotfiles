@@ -2,5 +2,5 @@
 .svn
 
 tmux/plugins
-vim/bundle
+vim/dein
 virtualenvs
