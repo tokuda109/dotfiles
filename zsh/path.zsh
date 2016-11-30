@@ -1,5 +1,2 @@
 
-## export PATH=/usr/local/bin:$PATH
-## export PATH=/usr/local/sbin:$PATH
-
 export MANPATH=/usr/local/share/man:$MANPATH
