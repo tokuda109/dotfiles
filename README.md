@@ -1,1 +1,7 @@
-# \[._.]/ dotfile
+# \\[._.]/ dotfile
+
+## Installation
+
+```sh
+$ rake install
+```

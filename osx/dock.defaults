@@ -1,4 +1,9 @@
 #!/bin/bash
 
-# Dock: position the Dock on the left
+# Move the Dock orientation to the left
 defaults write com.apple.dock orientation left
+
+# Set the icon size of Dock items to 32 pixels
+defaults write com.apple.dock tilesize -int 32
+
+killall Dock
