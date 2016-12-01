@@ -30,5 +30,4 @@
 [[ -f $HOME/.zsh/rbenv.zsh ]] && source $HOME/.zsh/rbenv.zsh
 
 ## gcloud
-[[ -f $HOME/google-cloud-sdk/path.zsh.inc ]] && source $HOME/google-cloud-sdk/path.zsh.inc
-[[ -f $HOME/google-cloud-sdk/completion.zsh.inc ]] && source $HOME/google-cloud-sdk/completion.zsh.inc
+[[ -f $HOME/.zsh/gcloud.zsh ]] && source $HOME/.zsh/gcloud.zsh
