@@ -12,12 +12,6 @@ task install: [
 ]
 
 namespace :install do
-  task :bash do
-    if ! File.exist?(ENV["HOME"] + '/.bashrc')
-      sh "ln -s `pwd`/bashrc ~/.bashrc"
-    end
-  end
-
   task :git do
     if ! File.exist?(ENV["HOME"] + '/.gitconfig')
       sh "ln -s `pwd`/gitconfig ~/.gitconfig"
@@ -36,10 +30,13 @@ namespace :install do
     end
   end
 
-  task :vim do
-    if ! File.exist?(ENV["HOME"] + '/.gvimrc')
-      sh "ln -s `pwd`/gvimrc ~/.gvimrc"
+  task :tpm do
+    if File.directory?(ENV["HOME"] + '/.tmux/plugins/tpm')
+      sh "~/.tmux/plugins/tpm/bin/install_plugins"
     end
+  end
+
+  task :vim do
     if ! File.exist?(ENV["HOME"] + '/.vimrc')
       sh "ln -s `pwd`/vimrc ~/.vimrc"
     end
