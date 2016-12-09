@@ -12,6 +12,12 @@ task install: [
 ]
 
 namespace :install do
+  task :atom do
+    if File.exist?('./atom/packages.txt')
+      sh "apm install --packages-file ./atom/packages.txt"
+    end
+  end
+
   task :git do
     if ! File.exist?(ENV["HOME"] + '/.gitconfig')
       sh "ln -s `pwd`/gitconfig ~/.gitconfig"
