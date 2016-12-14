@@ -1,3 +1,4 @@
 emmet@2.4.3
 file-icons@1.7.25
+language-swift@0.5.0
 nuclide@0.188.0

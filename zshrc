@@ -9,7 +9,7 @@
 [[ -f $HOME/.zsh/script.zsh ]] && source $HOME/.zsh/script.zsh
 
 ## PATHの設定
-## [[ -f $HOME/.zsh/path.zsh ]] && source $HOME/.zsh/path.zsh
+[[ -f $HOME/.zsh/path.zsh ]] && source $HOME/.zsh/path.zsh
 
 ## 履歴の設定
 [[ -f $HOME/.zsh/history.zsh ]] && source $HOME/.zsh/history.zsh
