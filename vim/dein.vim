@@ -20,7 +20,7 @@ call dein#add("bling/vim-airline")
 
 call dein#add("scrooloose/nerdtree")
 
-call dein#add("kien/ctrlp.vim")
+call dein#add("ctrlpvim/ctrlp.vim")
 
 call dein#add("tpope/vim-fugitive")
 
@@ -28,5 +28,9 @@ call dein#add("mattn/emmet-vim")
 
 call dein#add("othree/html5.vim")
 call dein#add("othree/yajs.vim")
+
+if has('vim_starting') && dein#check_install()
+  call dein#install()
+endif
 
 call dein#end()
