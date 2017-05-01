@@ -20,9 +20,9 @@ set-option -g prefix C-t
 bind-key C-t send-prefix
 
 # Yで1行コピー
-bind -t vi-copy v begin-selection
-bind -t vi-copy y copy-selection
-bind -t vi-copy Y copy-line
+bind-key -T copy-mode-vi v send-keys -X begin-selection
+bind-key -T copy-mode-vi y send-keys -X copy-selection
+bind-key -T copy-mode-vi Y send-keys -X copy-line
 
 # 次のウィンドウへ移動する。
 unbind ^N
