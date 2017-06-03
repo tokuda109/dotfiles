@@ -28,6 +28,7 @@ call dein#add("mattn/emmet-vim")
 
 call dein#add("othree/html5.vim")
 call dein#add("othree/yajs.vim")
+call dein#add("leafgarland/typescript-vim")
 
 if has('vim_starting') && dein#check_install()
   call dein#install()
