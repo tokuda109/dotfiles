@@ -17,7 +17,7 @@ let NERDTreeIgnore = [
 " ------------------------------------------------------------------------------
 
 let g:ctrlp_map = '<c-p>'
-let g:ctrlp_custom_ignore = '\v[\/](node_modules)|(\.(git))$'
+let g:ctrlp_custom_ignore = '\v[\/](node_modules|tmp)|(\.(swp|ico|git|DS_Store))$'
 
 " Emmet
 " ------------------------------------------------------------------------------
