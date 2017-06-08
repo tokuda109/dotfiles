@@ -5,8 +5,11 @@ task :default => 'install'
 
 desc 'Install dotfiles'
 task install: [
+  'install:atom',
+  'install:iterm',
   'install:git',
   'install:tmux',
+  'install:tpm',
   'install:vim',
   'install:zsh'
 ]
@@ -15,6 +18,12 @@ namespace :install do
   task :atom do
     if File.exist?('./atom/packages.txt')
       sh "apm install --packages-file ./atom/packages.txt"
+    end
+  end
+
+  task :iterm do
+    if ! File.exist?('~/Library/Preferences/com.googlecode.iterm2.plist')
+      sh "cp ./iterm2/com.googlecode.iterm2.plist ~/Library/Preferences"
     end
   end
 
@@ -48,6 +57,11 @@ namespace :install do
     end
     if ! File.directory?(ENV["HOME"] + '/.vim/')
       sh "ln -s `pwd`/vim ~/.vim"
+    end
+    if ! File.directory?(ENV["HOME"] + '/.vim/dein')
+      sh "mkdir `pwd`/vim/dein"
+      sh "curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh"
+      sh "sh ./installer.sh `pwd`/vim/dein"
     end
   end
 
