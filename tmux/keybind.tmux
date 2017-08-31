@@ -82,5 +82,3 @@ bind q confirm-before -p "kill-server? (y/n)" kill-server
 # 設定反映
 unbind r
 bind r source-file ~/.tmux.conf \; display "Reloaded!"
-
-# if-shell "test -d ~/.tmux/plugins/tundle/" && bind-key I run-shell "~/.tmux/plugins/tundle/scripts/install_plugins.sh"

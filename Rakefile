@@ -9,7 +9,6 @@ task install: [
   'install:iterm',
   'install:git',
   'install:tmux',
-  'install:tpm',
   'install:vim',
   'install:zsh'
 ]
@@ -42,12 +41,6 @@ namespace :install do
     end
     if ! File.directory?(ENV["HOME"] + '/.tmux/')
       sh "ln -s `pwd`/tmux ~/.tmux"
-    end
-  end
-
-  task :tpm do
-    if File.directory?(ENV["HOME"] + '/.tmux/plugins/tpm')
-      sh "~/.tmux/plugins/tpm/bin/install_plugins"
     end
   end
 
@@ -94,5 +87,6 @@ desc 'Remove installed dotfiles'
 namespace :uninstall do
 end
 
-namespace :prepare do
+desc 'Update tasks'
+namespace :update do
 end
