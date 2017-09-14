@@ -32,6 +32,10 @@ bind ^N next-window
 unbind ^P
 bind ^P previous-window
 
+# ウィンドウの入れ替え。
+bind S-Left swap-window -t -1
+bind S-Right swap-window -t +1
+
 # ウィンドウを左右のペインに分割
 unbind ^H
 bind ^H split-window -h
