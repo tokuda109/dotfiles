@@ -5,9 +5,6 @@
 ## エイリアスの設定
 [[ -f $HOME/.zsh/alias.zsh ]] && source $HOME/.zsh/alias.zsh
 
-## スクリプト系の設定
-[[ -f $HOME/.zsh/script.zsh ]] && source $HOME/.zsh/script.zsh
-
 ## fzfの設定
 [[ -f $HOME/.zsh/fzf.zsh ]] && source $HOME/.zsh/fzf.zsh
 
