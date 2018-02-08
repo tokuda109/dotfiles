@@ -2,16 +2,18 @@
 	name = tokuda109
 	email = tokuda109@gmail.com
 [core]
-  editor = vim
+	editor = vim
 [color]
-  ui = auto
-  status = auto
-  diff = auto
-  branch = auto
+	ui = auto
+	status = auto
+	diff = auto
+	branch = auto
 [alias]
-  st = status
+	st = status
+[ghq]
+	root = /Users/tokuda109/Sources
 [push]
-  default = simple
+	default = simple
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
