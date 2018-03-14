@@ -2,6 +2,9 @@
 ## 基本設定
 [[ -f $HOME/.zsh/base.zsh ]] && source $HOME/.zsh/base.zsh
 
+## Prezto
+[[ -f $HOME/.zsh/prezto.zsh ]] && source $HOME/.zsh/prezto.zsh
+
 ## エイリアスの設定
 [[ -f $HOME/.zsh/alias.zsh ]] && source $HOME/.zsh/alias.zsh
 
