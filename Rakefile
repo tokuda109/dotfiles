@@ -5,7 +5,6 @@ task :default => 'install'
 
 desc 'Install dotfiles'
 task install: [
-  'install:atom',
   'install:iterm',
   'install:git',
   'install:tmux',
@@ -14,12 +13,6 @@ task install: [
 ]
 
 namespace :install do
-  task :atom do
-    if File.exist?('./atom/packages.txt')
-      sh "apm install --packages-file ./atom/packages.txt"
-    end
-  end
-
   task :iterm do
     if ! File.exist?('~/Library/Preferences/com.googlecode.iterm2.plist')
       sh "cp ./iterm2/com.googlecode.iterm2.plist ~/Library/Preferences"
