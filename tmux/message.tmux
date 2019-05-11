@@ -2,6 +2,6 @@
 # メッセージの設定
 # ==============================================================================
 
-set-option -g message-attr bold
-set-option -g message-fg white
-set-option -g message-bg colour196
+set-option -g message-style attr="bold"
+set-option -g message-style fg="white"
+set-option -g message-style bg="colour196"
