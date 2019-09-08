@@ -32,5 +32,8 @@
 ## Rubyの設定
 [[ -f $HOME/.zsh/ruby.zsh ]] && source $HOME/.zsh/ruby.zsh
 
+## Rustの設定
+[[ -f $HOME/.zsh/rust.zsh ]] && source $HOME/.zsh/rust.zsh
+
 ## gcloud
 [[ -f $HOME/.zsh/gcloud.zsh ]] && source $HOME/.zsh/gcloud.zsh
