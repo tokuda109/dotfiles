@@ -11,8 +11,7 @@ set-option -g status-interval 1
 
 set-option -g status-justify "left"
 
-set-option -g window-status-current-style attr="bold"
-set-option -g window-status-current-style fg="colour180"
+set-option -g window-status-current-style fg="colour180,bold"
 set-option -g window-status-current-style bg="colour0"
 
 set-window-option -g window-status-format "#[fg=colour255,bg=colour238][#I: #W]#[default]"
@@ -23,7 +22,6 @@ set-option -g pane-active-border-style fg="colour180"
 set-option -g pane-active-border-style bg="colour0"
 
 # ステータスライン - 全般
-set-option -g status-style attr="bold"
 set-option -g status-style fg="colour255"
 set-option -g status-style bg="colour238"
 
