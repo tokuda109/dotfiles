@@ -13,5 +13,12 @@
 ## Installation
 
 ```sh
+$ brew bundle
 $ rake install
+```
+
+### neovim
+
+```
+$ pip3 install neovim
 ```
