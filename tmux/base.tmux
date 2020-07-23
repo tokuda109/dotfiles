@@ -4,7 +4,8 @@
 
 # Escを打ったあとの待ち時間。
 # http://qiita.com/catatsuy/items/db0a471bf1eabaa21c36
-set-option -s escape-time 0
+# http://ymizushi.hateblo.jp/entry/2017/08/27/222932
+set-option -s escape-time 10
 
 # コピー、選択モードのキーバインドをviにする。
 set-window-option -g mode-keys vi

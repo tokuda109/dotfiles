@@ -12,29 +12,24 @@ set-option -g status-interval 1
 set-option -g status-justify "left"
 
 set-option -g window-status-current-style fg="colour180,bold"
-set-option -g window-status-current-style bg="colour0"
 
 set-window-option -g window-status-format "#[fg=colour255,bg=colour238][#I: #W]#[default]"
 set-window-option -g window-status-current-format "#[fg=colour0,bg=colour220,bold][#I: #W]#[default]"
 
 # アクティブなペイン
 set-option -g pane-active-border-style fg="colour180"
-set-option -g pane-active-border-style bg="colour0"
 
 # ステータスライン - 全般
 set-option -g status-style fg="colour255"
-set-option -g status-style bg="colour238"
 
 # ステータス行 - 左側
 set-option -g status-left-style fg="default"
-set-option -g status-left-style bg="default"
-set-option -g status-left "🐍 #(whoami)@#(hostname -s) ʕ ◔ϖ◔ʔ "
+set-option -g status-left "#(whoami)@#(hostname -s):"
 # 表示領域の最大長
-set-option -g status-left-length 100
+set-option -g status-left-length 120
 
 # ステータス行 - 右側
 set-option -g status-right-style fg="default"
-set-option -g status-right-style bg="default"
 set-option -g status-right "%y/%m/%d (%a) %H:%M"
 # 表示領域の最大長
-set-option -g status-right-length 100
+set-option -g status-right-length 50
