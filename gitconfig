@@ -1,6 +1,3 @@
-[user]
-	name = tokuda109
-	email = tokuda109@gmail.com
 [core]
 	editor = vim
 [color]
@@ -10,8 +7,6 @@
 	branch = auto
 [alias]
 	st = status
-[ghq]
-	root = /Users/tokuda109/Sources
 [push]
 	default = simple
 [pull]

@@ -5,7 +5,6 @@ task :default => 'install'
 
 desc 'Install dotfiles'
 task install: [
-  'install:iterm',
   'install:git',
   'install:tmux',
   'install:vim',
@@ -14,7 +13,6 @@ task install: [
 
 desc 'Uninstall dotfiles'
 task uninstall: [
-  'uninstall:iterm',
   'uninstall:git',
   'uninstall:tmux',
   'uninstall:vim',
@@ -22,12 +20,6 @@ task uninstall: [
 ]
 
 namespace :install do
-  task :iterm do
-    if ! File.exist?('~/Library/Preferences/com.googlecode.iterm2.plist')
-      sh 'ln -s `pwd`/preferences/om.googlecode.iterm2.plist ~/Library/Preferences/com.googlecode.iterm2.plist'
-    end
-  end
-
   task :git do
     if ! File.exist?(ENV['HOME'] + '/.gitconfig')
       sh 'ln -s `pwd`/gitconfig ~/.gitconfig'
