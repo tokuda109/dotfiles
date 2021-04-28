@@ -18,3 +18,7 @@
 	required = true
 [credential "https://source.developers.google.com"]
 	helper = gcloud.sh
+[gpg]
+	program = /usr/local/bin/gpg
+[commit]
+	gpgsign = true
