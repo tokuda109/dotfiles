@@ -2,5 +2,6 @@
 .svn
 
 vim/dein
+installer.sh
 
 !.gitkeep

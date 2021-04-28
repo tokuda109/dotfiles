@@ -7,10 +7,10 @@ if has('vim_starting')
     set nocompatible
   endif
 
-  set runtimepath+=~/.config/nvim/dein/repos/github.com/Shougo/dein.vim
+  set runtimepath+=~/.vim/dein/repos/github.com/Shougo/dein.vim
 endif
 
-call dein#begin(expand('~/.config/nvim/dein'))
+call dein#begin(expand('~/.vim/dein'))
 
 call dein#add("Shougo/dein.vim")
 
