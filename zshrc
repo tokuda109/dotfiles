@@ -23,6 +23,9 @@
 ## Goの設定
 [[ -f $HOME/.zsh/go.zsh ]] && source $HOME/.zsh/go.zsh
 
+## Javaの設定
+[[ -f $HOME/.zsh/java.zsh ]] && source $HOME/.zsh/java.zsh
+
 ## Node.jsの設定
 [[ -f $HOME/.zsh/node.zsh ]] && source $HOME/.zsh/node.zsh
 
