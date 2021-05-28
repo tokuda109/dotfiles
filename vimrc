@@ -1,9 +1,11 @@
-
 " Dein.vimの設定
 source ~/.vim/dein.vim
 
 " 基本設定
 source ~/.vim/base.vim
+
+" 色設定
+source ~/.vim/colors.vim
 
 " インデントの設定
 source ~/.vim/indent.vim

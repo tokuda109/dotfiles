@@ -5,8 +5,6 @@
 " NERDTree
 " ------------------------------------------------------------------------------
 
-autocmd vimenter * NERDTree
-
 let NERDTreeShowHidden = 1
 let NERDTreeIgnore = [
   \ '\.pyc$',
@@ -23,3 +21,11 @@ let g:ctrlp_custom_ignore = '\v[\/](node_modules|tmp)|(\.(swp|ico|git|DS_Store))
 " ------------------------------------------------------------------------------
 
 let g:user_emmet_expandabbr_key = '<C-z>'
+
+" Coc
+" ------------------------------------------------------------------------------
+
+let g:coc_global_extensions = [
+  \ 'coc-tsserver',
+  \ 'coc-vetur'
+  \ ]
