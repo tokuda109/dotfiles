@@ -31,7 +31,3 @@ noremap <Tab> gt
 
 " 前のタブに切り替え
 noremap <S-Tab> gT
-
-colorscheme Wombat
-
-syntax enable

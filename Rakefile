@@ -42,10 +42,10 @@ namespace :install do
     if ! File.exist?(ENV['HOME'] + '/.vimrc')
       sh 'ln -s `pwd`/vimrc ~/.vimrc'
     end
-    if ! File.directory?(ENV['HOME'] + '/.vim/')
-      sh 'ln -s `pwd`/vim ~/.vim'
+    if ! File.directory?(ENV['HOME'] + '/.config/nvim')
+      sh 'ln -s `pwd`/vim ~/.config/nvim'
     end
-    if ! File.directory?(ENV['HOME'] + '/.vim/dein')
+    if ! File.directory?(ENV['HOME'] + '/.config/nvim/dein')
       sh 'mkdir `pwd`/vim/dein'
       sh 'curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh'
       sh 'sh ./installer.sh `pwd`/vim/dein'
