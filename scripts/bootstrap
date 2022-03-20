@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+DOTFILES_ROOT=$(cd "$(dirname "$0")/.." && pwd -P)
+
+set -e
+
+ln -vsf "$DOTFILES_ROOT"/tmux.conf ~/.tmux.conf
+
+echo -e 'All installed!'

@@ -15,6 +15,7 @@
 ```
 $ git clone git@github.com:tokuda109/dotfiles.git ~/.dotfiles && cd ~/.dotfiles
 $ brew bundle
+$ script/bootstrap
 ```
 
 If you have not installed Homebrew yet, you will need to run the following command before running `brew bundle`.
