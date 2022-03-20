@@ -1,0 +1,14 @@
+name: Run lint
+
+on:
+  push:
+
+jobs:
+  lint:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install dependencies
+        run: brew install shellcheck
+      - name: Run lint to scripts/*.sh files
+        run: shellcheck ${GITHUB_WORKSPACE}/scripts/bootstrap
