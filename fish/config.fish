@@ -9,9 +9,9 @@ set -gx GIT_EDITOR nvim
 # Alias
 # ==============================================================================
 
-alias la "ls -A"
-alias ll "ls -l"
-alias lla "ll -A"
+alias la "exa --all"
+alias ll "exa --long --header"
+alias lla "ll --all"
 
 # ==============================================================================
 # Path
