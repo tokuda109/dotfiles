@@ -22,6 +22,7 @@ brew 'wget'
 
 cask 'brave-browser'
 cask 'google-chrome'
+cask 'google-cloud-sdk'
 cask 'google-japanese-ime'
 cask 'iterm2'
 cask 'visual-studio-code'
