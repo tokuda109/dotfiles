@@ -1,0 +1,15 @@
+[color]
+	ui = auto
+	status = auto
+	diff = auto
+	branch = auto
+[alias]
+	st = status
+[push]
+	default = simple
+[pull]
+	rebase = false
+[gpg]
+	program = /usr/local/bin/gpg
+[commit]
+	gpgsign = true

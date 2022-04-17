@@ -5,13 +5,15 @@ DOTFILES_ROOT=$(cd "$(dirname "$0")/.." && pwd -P)
 set -e
 
 CONFIG_DIR=~/.config
-if [ -d "$CONFIG_DIR" ]; then
-  rm -rf "$CONFIG_DIR"
+if [ -d $CONFIG_DIR ]; then
+  rm -rf $CONFIG_DIR
 fi
 
-mkdir "$CONFIG_DIR"
+mkdir $CONFIG_DIR
 
-ln -vsf "$DOTFILES_ROOT"/tmux.conf ~/.tmux.conf
-ln -vsf "$DOTFILES_ROOT"/fish      "$CONFIG_DIR"/fish
+ln -vsf $DOTFILES_ROOT/git/.gitconfig ~/.gitconfig
+ln -vsf $DOTFILES_ROOT/git/.gitignore ~/.gitignore
+ln -vsf $DOTFILES_ROOT/tmux.conf      ~/.tmux.conf
+ln -vsf $DOTFILES_ROOT/fish           $CONFIG_DIR/fish
 
 echo -e 'All installed!'
