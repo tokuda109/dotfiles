@@ -26,3 +26,15 @@ end
 if test -f "$GCLOUD_ROOT_PATH/path.fish.inc"
   source "$GCLOUD_ROOT_PATH/path.fish.inc"
 end
+
+# ==============================================================================
+# Prompt
+# ==============================================================================
+
+function fish_prompt
+  printf "%s" (set_color normal)(prompt_pwd) (set_color $fish_color_cwd) " ~> " (set_color normal)
+end
+
+function fish_right_prompt
+  printf "%s" (fish_git_prompt)
+end
