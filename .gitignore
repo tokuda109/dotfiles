@@ -1,3 +1,8 @@
 .DS_Store
 
-fish_variables
+# fish shell
+fish/completions
+fish/conf.d
+fish/functions
+fish/fish_history
+fish/fish_variables
