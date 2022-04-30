@@ -9,7 +9,14 @@
 	default = simple
 [pull]
 	rebase = false
+[ghq]
+	root = ~/Sources
 [gpg]
 	program = /usr/local/bin/gpg
 [commit]
 	gpgsign = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
