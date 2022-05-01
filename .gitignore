@@ -6,3 +6,6 @@ fish/conf.d
 fish/functions
 fish/fish_history
 fish/fish_variables
+
+# neovim
+nvim/dein
