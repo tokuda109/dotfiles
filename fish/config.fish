@@ -28,8 +28,7 @@ if test -f "$GCLOUD_ROOT_PATH/path.fish.inc"
 end
 
 # Node.js
-set -gx VOLTA_HOME "$HOME/.volta"
-set -gx PATH "$VOLTA_HOME/bin" $PATH
+eval (nodenv init - | source)
 
 # ==============================================================================
 # Prompt
