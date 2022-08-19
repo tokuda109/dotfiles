@@ -9,9 +9,8 @@ set -gx GIT_EDITOR nvim
 # Alias
 # ==============================================================================
 
-alias la "exa --all"
-alias ll "exa --long --header"
-alias lla "ll --all"
+alias la "exa --all --icons"
+alias ll "exa --all --icons --long --header"
 
 # ==============================================================================
 # Path
@@ -41,3 +40,10 @@ end
 function fish_right_prompt
   printf "%s" (fish_git_prompt)
 end
+
+# ==============================================================================
+# Exa
+# ==============================================================================
+
+# Exa Colors
+set -gx EXA_COLORS "fi=36:sn=0:sb=0:uu=0:un=0:da=0"

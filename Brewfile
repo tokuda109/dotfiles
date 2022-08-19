@@ -2,12 +2,14 @@ cask_args appdir: '/Applications', require_sha: true
 
 tap 'homebrew/bundle'
 tap 'homebrew/cask'
+tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
 tap 'homebrew/core'
 
 brew 'docker-compose'
 brew 'exa'
 brew 'fish'
+brew 'font-hack-nerd-font'
 brew 'fzf'
 brew 'ghq'
 brew 'git'
