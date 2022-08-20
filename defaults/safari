@@ -11,8 +11,17 @@ defaults write com.apple.Safari "IncludeInternalDebugMenu" -bool "true"
 # Show the full URL in the address bar (note: this will still hide the scheme)
 defaults write com.apple.Safari "ShowFullURLInSmartSearchField" -bool "true"
 
-# Don't remember passwords
+# Disable AutoFill: Address Book
+defaults write com.apple.Safari "AutoFillFromAddressBook" -bool "false"
+
+# Disable AutoFill: Password
 defaults write com.apple.Safari "AutoFillPasswords" -bool "false"
+
+# Disable AutoFill: Credit Card
+defaults write com.apple.Safari "AutoFillCreditCardData" -bool "false"
+
+# Disable AutoFill: Miscellaneous Forms
+defaults write com.apple.Safari "AutoFillMiscellaneousForms" -bool "false"
 
 # Enable “Do Not Track”
 defaults write com.apple.Safari "SendDoNotTrackHTTPHeader" -bool "true"

@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+# Disable prompt on iTerm quit
+defaults write com.googlecode.iTerm2 "PromptOnQuit" -bool false
+
+# Set iterm2/dynamic-profiles.json as default profile
+defaults write com.googlecode.iTerm2 "DefaultBookmarkGuid" -string "9C09B6F2-083A-45D1-B833-7B4E8ADC0A34"

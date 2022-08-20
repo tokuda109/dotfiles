@@ -17,4 +17,8 @@ ln -vsf $DOTFILES_ROOT/nvim           $CONFIG_DIR/nvim
 ln -vsf $DOTFILES_ROOT/tmux.conf      ~/.tmux.conf
 ln -vsf $DOTFILES_ROOT/fish           $CONFIG_DIR/fish
 
+mkdir $CONFIG_DIR/iterm2
+ln -vsf ~/Library/Application\ Support/iTerm2 $CONFIG_DIR/iterm2/AppSupport
+ln -vsf $DOTFILES_ROOT/iterm2/dotfile.json $CONFIG_DIR/iterm2/AppSupport/DynamicProfiles
+
 echo -e 'All installed!'
