@@ -11,11 +11,11 @@ fi
 
 mkdir $CONFIG_DIR
 
-ln -vsf $DOTFILES_ROOT/git/.gitconfig ~/.gitconfig
-ln -vsf $DOTFILES_ROOT/git/.gitignore ~/.gitignore
-ln -vsf $DOTFILES_ROOT/nvim           $CONFIG_DIR/nvim
-ln -vsf $DOTFILES_ROOT/tmux.conf      ~/.tmux.conf
-ln -vsf $DOTFILES_ROOT/fish           $CONFIG_DIR/fish
+ln -vsf $DOTFILES_ROOT/git/.gitconfig      ~/.gitconfig
+ln -vsf $DOTFILES_ROOT/git/.gitignore      ~/.gitignore
+ln -vsf $DOTFILES_ROOT/nvim                $CONFIG_DIR/nvim
+ln -vsf $DOTFILES_ROOT/tmux                $CONFIG_DIR/tmux
+ln -vsf $DOTFILES_ROOT/fish                $CONFIG_DIR/fish
 
 mkdir $CONFIG_DIR/iterm2
 ln -vsf ~/Library/Application\ Support/iTerm2 $CONFIG_DIR/iterm2/AppSupport
