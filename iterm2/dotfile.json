@@ -16,7 +16,11 @@
 
       "Terminal Type": "xterm-256color",
 
-      "Close Sessions On End": true
+      "Close Sessions On End": true,
+
+      "Horizontal Spacing": 0.6,
+      "Vertical Spacing": 1.2,
+      "Window Type" : 15
     }
   ]
 }
