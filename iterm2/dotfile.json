@@ -18,7 +18,7 @@
 
       "Close Sessions On End": true,
 
-      "Horizontal Spacing": 0.6,
+      "Horizontal Spacing": 1.2,
       "Vertical Spacing": 1.2,
       "Window Type" : 15
     }
