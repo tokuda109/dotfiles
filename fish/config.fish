@@ -17,6 +17,7 @@ alias ll "exa --all --icons --long --header"
 # ==============================================================================
 
 set -gx PATH node_modules/.bin "$PATH"
+set -gx XDG_CONFIG_HOME "$HOME/.config"
 
 # gcloud
 if test -d $(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk

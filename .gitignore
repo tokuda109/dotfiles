@@ -1,11 +1,12 @@
-.DS_Store
-
 # fish shell
 fish/completions
 fish/conf.d
 fish/functions
 fish/fish_history
 fish/fish_variables
+
+# git
+git/.gitconfig.*
 
 # neovim
 nvim/dein
