@@ -10,16 +10,10 @@
 
 ```
 
-## Installation
+## Documentation
 
-```
-$ git clone git@github.com:tokuda109/dotfiles.git ~/.dotfiles && cd ~/.dotfiles
-$ brew bundle
-$ script/bootstrap
-```
+Please see [Wiki](https://github.com/tokuda109/dotfiles/wiki).
 
-If you have not installed Homebrew yet, you will need to run the following command before running `brew bundle`.
+## License
 
-```
-$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-```
+Licensed under the MIT license.
