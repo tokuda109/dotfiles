@@ -1,0 +1,29 @@
+local status, packer = pcall(require, 'packer')
+if (not status) then
+  print('Packer is not installed')
+  return
+end
+
+vim.cmd('packadd packer.nvim')
+
+return require('packer').startup(function(use)
+  use({'wbthomason/packer.nvim'})
+  use({'kyazdani42/nvim-web-devicons'})
+  use({'folke/tokyonight.nvim'})
+  use({'nvim-lua/plenary.nvim'})
+  use({'neovim/nvim-lspconfig'})
+  use({'williamboman/mason.nvim'})
+  use({'williamboman/mason-lspconfig.nvim'})
+  use({'hrsh7th/nvim-cmp'})
+  use({'hrsh7th/cmp-nvim-lsp'})
+  use({'hrsh7th/cmp-vsnip'})
+  use({'nvim-telescope/telescope.nvim', tag = '0.1.0'})
+  use({'nvim-telescope/telescope-file-browser.nvim'})
+  use({'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'})
+  use({'kyazdani42/nvim-tree.lua'})
+  use({'lukas-reineke/indent-blankline.nvim'})
+  use({'phaazon/hop.nvim', branch = 'v2'})
+  use({'nvim-lualine/lualine.nvim'})
+  use({'windwp/nvim-autopairs'})
+  use({'ur4ltz/surround.nvim'})
+end)

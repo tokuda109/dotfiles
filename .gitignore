@@ -9,4 +9,4 @@ fish/fish_variables
 git/.gitconfig.*
 
 # neovim
-nvim/dein
+nvim/plugin
