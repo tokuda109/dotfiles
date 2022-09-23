@@ -11,8 +11,8 @@ vim.api.nvim_set_keymap('v', ';', ':', { noremap = true })
 vim.api.nvim_set_keymap('v', ':', ';', { noremap = true })
 
 -- Tab navigation
-vim.api.nvim_set_keymap('n', '<Tab>', 'gt', opt)
-vim.api.nvim_set_keymap('n', '<S-Tab>', 'gT', opt)
+vim.api.nvim_set_keymap('n', '<Tab>', ':tabnext<CR>', opt)
+vim.api.nvim_set_keymap('n', '<S-Tab>', ':tabprev<CR>', opt)
 
 -- Window navigation
 vim.api.nvim_set_keymap('n', '<C-h>', '<C-w>h', opt)
