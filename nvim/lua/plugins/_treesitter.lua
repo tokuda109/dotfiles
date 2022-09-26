@@ -6,11 +6,16 @@ end
 configs.setup({
   ensure_installed = {
     'css',
+    'dockerfile',
+    'fish',
     'go',
+    'graphql',
     'html',
     'javascript',
+    'json',
     'lua',
     'typescript',
+    'yaml',
   },
   sync_install = false,
   auto_install = true,
