@@ -6,7 +6,7 @@ end
 
 vim.cmd('packadd packer.nvim')
 
-return require('packer').startup(function(use)
+return packer.startup(function(use)
   use({'wbthomason/packer.nvim'})
   use({'kyazdani42/nvim-web-devicons'})
   use({'folke/tokyonight.nvim'})
@@ -25,6 +25,7 @@ return require('packer').startup(function(use)
   use({'phaazon/hop.nvim', branch = 'v2'})
   use({'nvim-lualine/lualine.nvim'})
   use({'numToStr/Comment.nvim'})
+  use({'lewis6991/gitsigns.nvim'})
   use({'windwp/nvim-autopairs'})
   use({'ur4ltz/surround.nvim'})
 end)

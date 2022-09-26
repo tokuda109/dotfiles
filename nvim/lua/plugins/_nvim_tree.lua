@@ -16,7 +16,10 @@ nvim_tree.setup({
       }
     }
   },
-  sort_by = 'case_sensitive'
+  sort_by = 'case_sensitive',
+  filters = {
+    dotfiles = false,
+  },
 })
 
 vim.api.nvim_set_keymap('n', 't', '<cmd>lua require\'nvim-tree\'.toggle(false, true)<cr>', { noremap = true })
