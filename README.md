@@ -10,6 +10,8 @@
 
 ```
 
+This repository contains everything to bootstrap my Mac machines.
+
 ## Documentation
 
 Please see [Wiki](https://github.com/tokuda109/dotfiles/wiki).
