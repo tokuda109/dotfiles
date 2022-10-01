@@ -26,6 +26,7 @@ brew 'tfenv'
 brew 'tig'
 brew 'tmux'
 brew 'wget'
+brew 'zoxide'
 
 cask 'brave-browser'
 cask 'docker'

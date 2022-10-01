@@ -28,7 +28,10 @@ if test -f "$GCLOUD_ROOT_PATH/path.fish.inc"
 end
 
 # Node.js
-eval (nodenv init - | source)
+nodenv init - | source
+
+# zoxide
+zoxide init fish | source
 
 # ==============================================================================
 # Color
