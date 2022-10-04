@@ -1,26 +1,29 @@
-local status_ok, lspconfig = pcall(require, 'lspconfig')
-if not status_ok then
+local lspconfig_status_ok, lspconfig = pcall(require, 'lspconfig')
+if not lspconfig_status_ok then
   return
 end
 
-local status_ok, mason = pcall(require, 'mason')
-if not status_ok then
+local mason_status_ok, mason = pcall(require, 'mason')
+if not mason_status_ok then
   return
 end
 
-local status_ok, mason_lspconfig = pcall(require, 'mason-lspconfig')
-if not status_ok then
+local masonlsp_status_ok, mason_lspconfig = pcall(require, 'mason-lspconfig')
+if not masonlsp_status_ok then
   return
 end
 
-local status_ok, cmp = pcall(require, 'cmp')
-if not status_ok then
+local cmp_status_ok, cmp = pcall(require, 'cmp')
+if not cmp_status_ok then
   return
 end
 
 local on_attach = function(client, bufnr)
   local opt = { noremap = true, silent = true }
-  vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gd', '<Cmd>lua vim.lsp.buf.type_definition()<CR>', opt)
+  vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gd', '<Cmd>lua vim.lsp.buf.definition()<CR>', opt)
+  vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gD', '<Cmd>lua vim.lsp.buf.declaration()<CR>', opt)
+  vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gt', '<Cmd>lua vim.lsp.buf.type_definition()<CR>', opt)
+  vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gr', '<Cmd>lua vim.lsp.buf.references()<CR>', opt)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gh', '<Cmd>lua vim.lsp.buf.hover()<CR>', opt)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gl', '<Cmd>lua vim.diagnostic.open_float()<CR>', opt)
 end
@@ -45,9 +48,11 @@ mason_lspconfig.setup_handlers({
 })
 
 cmp.setup({
-  mapping = {
-
-  },
+  mapping = cmp.mapping.preset.insert({
+    ['<C-p>'] = cmp.mapping.select_prev_item(),
+    ['<C-n>'] = cmp.mapping.select_next_item(),
+    ['<CR>'] = cmp.mapping.confirm { select = true },
+  }),
   sources = {
     { name = 'nvim_lsp' },
   }
