@@ -10,7 +10,7 @@
       "Custom Command": "Custom Shell",
       "Command": "\/usr\/local\/bin\/tmux",
 
-      "Normal Font": "HackNerdFontCompleteM-Regular 12",
+      "Normal Font": "HackNerdFontCompleteM-Regular 13",
       "ASCII Anti Aliased": true,
       "Use Non-ASCII Font": false,
 
@@ -18,8 +18,8 @@
 
       "Close Sessions On End": true,
 
-      "Horizontal Spacing": 1.2,
-      "Vertical Spacing": 1.2,
+      "Horizontal Spacing": 1,
+      "Vertical Spacing": 1,
       "Window Type" : 15
     }
   ]
