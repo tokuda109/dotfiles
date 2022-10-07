@@ -30,6 +30,9 @@ end
 # Node.js
 nodenv init - | source
 
+# Python
+pyenv init - | source
+
 # zoxide
 zoxide init fish | source
 
