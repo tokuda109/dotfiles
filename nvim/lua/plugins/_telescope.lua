@@ -3,6 +3,8 @@ if not status_ok then
   return
 end
 
+local opt = { noremap = true, silent = true }
+
 telescope.setup({
   defaults = {
     file_ignore_patterns = {
@@ -26,6 +28,6 @@ telescope.setup({
 
 telescope.load_extension('file_browser')
 
-vim.api.nvim_set_keymap('n', 'ff', '<cmd>lua require(\'telescope.builtin\').find_files()<cr>', { noremap = true })
-vim.api.nvim_set_keymap('n', 'fl', '<cmd>lua require(\'telescope.builtin\').live_grep()<cr>', { noremap = true })
-vim.api.nvim_set_keymap('n', 'fb', '<cmd>lua require(\'telescope\').extensions.file_browser.file_browser()<cr>', { noremap = true })
+vim.keymap.set('n', 'ff', '<Cmd>lua require(\'telescope.builtin\').find_files()<CR>', opt)
+vim.keymap.set('n', 'fl', '<Cmd>lua require(\'telescope.builtin\').live_grep()<CR>', opt)
+vim.keymap.set('n', 'fb', '<Cmd>lua require(\'telescope\').extensions.file_browser.file_browser()<CR>', opt)

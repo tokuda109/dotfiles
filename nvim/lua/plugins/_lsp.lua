@@ -18,13 +18,14 @@ if not cmp_status_ok then
   return
 end
 
-local on_attach = function(client, bufnr)
+local on_attach = function(_, bufnr)
   local opt = { noremap = true, silent = true }
+  vim.api.nvim_buf_set_keymap(bufnr, 'n', 'K', '<Cmd>lua vim.lsp.buf.hover()<CR>', opt)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gd', '<Cmd>lua vim.lsp.buf.definition()<CR>', opt)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gD', '<Cmd>lua vim.lsp.buf.declaration()<CR>', opt)
+  vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gi', '<Cmd>lua vim.lsp.buf.implementation()<CR>', opt)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gt', '<Cmd>lua vim.lsp.buf.type_definition()<CR>', opt)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gr', '<Cmd>lua vim.lsp.buf.references()<CR>', opt)
-  vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gh', '<Cmd>lua vim.lsp.buf.hover()<CR>', opt)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gl', '<Cmd>lua vim.diagnostic.open_float()<CR>', opt)
 end
 
@@ -42,7 +43,7 @@ mason_lspconfig.setup({
 mason_lspconfig.setup_handlers({
   function(server_name)
     lspconfig[server_name].setup({
-        on_attach = on_attach
+      on_attach = on_attach
     })
   end
 })

@@ -3,6 +3,8 @@ if not status_ok then
   return
 end
 
+local opt = { noremap = true, silent = true }
+
 neo_tree.setup({
   window = {
     mappings = {
@@ -11,5 +13,5 @@ neo_tree.setup({
   },
 })
 
-vim.api.nvim_set_keymap('n', 'ft', '<cmd>NeoTreeFloatToggle<cr>', { noremap = true })
-vim.api.nvim_set_keymap('n', 'fg', '<cmd>NeoTreeFloatToggle git_status<cr>', { noremap = true })
+vim.keymap.set('n', 'ft', '<Cmd>NeoTreeFloatToggle<CR>', opt)
+vim.keymap.set('n', 'fg', '<Cmd>NeoTreeFloatToggle git_status<CR>', opt)

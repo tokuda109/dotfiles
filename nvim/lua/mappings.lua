@@ -2,17 +2,21 @@ local opt = { noremap = true, silent = true }
 
 -- Remap leader as space key
 vim.g.mapleader = ' '
-vim.api.nvim_set_keymap('n', '<Space>', '', opt)
-vim.api.nvim_set_keymap('v', '<Space>', '', opt)
+vim.keymap.set('n', '<Space>', '', opt)
+vim.keymap.set('v', '<Space>', '', opt)
 
-vim.api.nvim_set_keymap('n', ';', ':', opt)
-vim.api.nvim_set_keymap('n', ':', ';', opt)
-vim.api.nvim_set_keymap('v', ';', ':', opt)
-vim.api.nvim_set_keymap('v', ':', ';', opt)
+vim.keymap.set('n', 'q', '<Nop>', opt)
+
+vim.keymap.set({ 'n', 'i', 'v' }, ';', ':', opt)
+vim.keymap.set({ 'n', 'i', 'v' }, ':', ';', opt)
 
 -- Tab navigation
-vim.api.nvim_set_keymap('n', '<Tab>', ':tabnext<CR>', opt)
-vim.api.nvim_set_keymap('n', '<S-Tab>', ':tabprev<CR>', opt)
+vim.keymap.set('n', '<Tab>', '<Cmd>tabnext<CR>', opt)
+vim.keymap.set('n', '<S-Tab>', '<Cmd>tabprev<CR>', opt)
 
 -- Clean highlight search
-vim.api.nvim_set_keymap('n', '<Esc><Esc>', ':nohlsearch<CR>', opt)
+vim.keymap.set('n', '<Esc><Esc>', '<Cmd>nohlsearch<CR>', opt)
+
+-- Reload init.lua without restarting neovim
+vim.keymap.set('n', '<Leader>r', '<Cmd>source $MYVIMRC<CR> | <Cmd>echo "$MYVIMRC reloaded"<CR>', opt)
+
