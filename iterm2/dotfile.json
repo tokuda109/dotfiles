@@ -18,6 +18,8 @@
 
       "Close Sessions On End": true,
 
+      "Option Key Sends": 2,
+
       "Horizontal Spacing": 1,
       "Vertical Spacing": 1,
       "Window Type" : 15

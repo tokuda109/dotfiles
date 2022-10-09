@@ -10,6 +10,12 @@ vim.keymap.set('n', 'q', '<Nop>', opt)
 vim.keymap.set({ 'n', 'i', 'v' }, ';', ':', opt)
 vim.keymap.set({ 'n', 'i', 'v' }, ':', ';', opt)
 
+-- Navigation in insert mode
+vim.keymap.set('i', '<M-h>', '<Left>', opt)
+vim.keymap.set('i', '<M-j>', '<Down>', opt)
+vim.keymap.set('i', '<M-k>', '<Up>', opt)
+vim.keymap.set('i', '<M-l>', '<Right>', opt)
+
 -- Tab navigation
 vim.keymap.set('n', '<Tab>', '<Cmd>tabnext<CR>', opt)
 vim.keymap.set('n', '<S-Tab>', '<Cmd>tabprev<CR>', opt)
