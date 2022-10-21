@@ -27,6 +27,9 @@ if test -f "$GCLOUD_ROOT_PATH/path.fish.inc"
   source "$GCLOUD_ROOT_PATH/path.fish.inc"
 end
 
+## Go
+goenv init - | source
+
 # Node.js
 nodenv init - | source
 
