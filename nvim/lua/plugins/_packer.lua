@@ -24,6 +24,7 @@ return packer.startup(function(use)
     'MunifTanjim/nui.nvim'
   }})
   use({'lukas-reineke/indent-blankline.nvim'})
+  use({'gpanders/editorconfig.nvim'})
   use({'phaazon/hop.nvim', branch = 'v2'})
   use({'nvim-lualine/lualine.nvim'})
   use({'numToStr/Comment.nvim'})
