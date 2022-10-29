@@ -7,6 +7,7 @@ vim.keymap.set('v', '<Space>', '', opt)
 
 vim.keymap.set('n', 'q', '<Nop>', opt)
 
+-- Swap `:` and `;` keymaps
 vim.keymap.set({ 'n', 'i', 'v' }, ';', ':', opt)
 vim.keymap.set({ 'n', 'i', 'v' }, ':', ';', opt)
 

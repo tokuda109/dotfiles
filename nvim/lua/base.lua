@@ -23,3 +23,5 @@ vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.smarttab = true
 vim.opt.expandtab = true          -- Insert space character
+
+vim.opt.cmdheight = 0             -- Set zero height to command line area
