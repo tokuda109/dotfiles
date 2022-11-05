@@ -10,6 +10,7 @@ configs.setup({
     'fish',
     'go',
     'graphql',
+    'hcl',
     'html',
     'javascript',
     'json',
