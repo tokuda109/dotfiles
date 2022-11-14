@@ -6,8 +6,16 @@ end
 local opt = { noremap = true, silent = true }
 
 neo_tree.setup({
+  filesystem = {
+    filtered_items = {
+      hide_dotfiles = false,
+      hide_gitignored = false,
+    }
+  },
   window = {
     mappings = {
+      ['s'] = 'open_split',
+      ['v'] = 'open_vsplit',
       ['<C-c>'] = 'close_window',
     }
   },
