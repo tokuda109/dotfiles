@@ -36,7 +36,8 @@ mason_lspconfig.setup({
     'gopls',
     'graphql',
     'sumneko_lua',
-    'tsserver'
+    'tsserver',
+    'volar',
   }
 })
 
