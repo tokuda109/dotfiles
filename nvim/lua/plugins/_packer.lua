@@ -23,6 +23,11 @@ return packer.startup(function(use)
   use({'nvim-neo-tree/neo-tree.nvim', branch = 'v2.x', requires = {
     'MunifTanjim/nui.nvim'
   }})
+  use({'mattn/emmet-vim', ft = {
+    'html',
+    'javascript.jsx',
+    'typescript.tsx',
+  }})
   use({'lukas-reineke/indent-blankline.nvim'})
   use({'gpanders/editorconfig.nvim'})
   use({'phaazon/hop.nvim', branch = 'v2'})
