@@ -27,3 +27,5 @@ vim.opt.expandtab = true          -- Insert space character
 vim.opt.swapfile = false          -- Disable swapfile
 
 vim.opt.cmdheight = 0             -- Set zero height to command line area
+
+vim.api.nvim_set_option('clipboard', 'unnamedplus')
