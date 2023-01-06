@@ -14,8 +14,8 @@ neo_tree.setup({
   },
   window = {
     mappings = {
-      ['s'] = 'open_split',
-      ['v'] = 'open_vsplit',
+      ['<C-h>'] = 'open_split',
+      ['<C-v>'] = 'open_vsplit',
       ['<C-c>'] = 'close_window',
     }
   },

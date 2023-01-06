@@ -12,7 +12,10 @@ telescope.setup({
     },
     mappings = {
       i = {},
-      n = {},
+      n = {
+        ["<C-h>"] = "select_horizontal",
+        ["<C-v>"] = "select_vertical",
+      },
     },
   },
   extensions = {
