@@ -7,10 +7,6 @@ vim.keymap.set('v', '<Space>', '', opt)
 
 vim.keymap.set('n', 'q', '<Nop>', opt)
 
--- Swap `:` and `;` keymaps
-vim.keymap.set({ 'n', 'i', 'v' }, ';', ':', opt)
-vim.keymap.set({ 'n', 'i', 'v' }, ':', ';', opt)
-
 -- Navigation in insert mode
 vim.keymap.set('i', '<M-h>', '<Left>', opt)
 vim.keymap.set('i', '<M-j>', '<Down>', opt)
