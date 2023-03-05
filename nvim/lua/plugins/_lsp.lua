@@ -35,7 +35,7 @@ mason_lspconfig.setup({
     'cssls',
     'gopls',
     'graphql',
-    'sumneko_lua',
+    'lua_ls',
     'tsserver',
     'volar',
   }
@@ -49,7 +49,7 @@ mason_lspconfig.setup_handlers({
   end
 })
 
-lspconfig.sumneko_lua.setup({
+lspconfig.lua_ls.setup({
   settings = {
     Lua = {
       diagnostics = {
