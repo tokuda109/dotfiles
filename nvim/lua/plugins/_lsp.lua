@@ -27,6 +27,8 @@ local on_attach = function(_, bufnr)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gt', '<Cmd>lua vim.lsp.buf.type_definition()<CR>', opt)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gr', '<Cmd>lua vim.lsp.buf.references()<CR>', opt)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gl', '<Cmd>lua vim.diagnostic.open_float()<CR>', opt)
+  vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gs', ':sp<CR><Cmd>lua vim.lsp.buf.definition()<CR>', opt)
+  vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gv', ':vsp<CR><Cmd>lua vim.lsp.buf.definition()<CR>', opt)
 end
 
 mason.setup()
