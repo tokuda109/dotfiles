@@ -23,6 +23,8 @@ return packer.startup(function(use)
   use({'nvim-neo-tree/neo-tree.nvim', branch = 'v2.x', requires = {
     'MunifTanjim/nui.nvim'
   }})
+  use({'windwp/nvim-autopairs'})
+  use({'windwp/nvim-ts-autotag'})
   use({'mattn/emmet-vim', ft = {
     'html',
     'javascript.jsx',

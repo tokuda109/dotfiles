@@ -16,6 +16,7 @@ configs.setup({
     'json',
     'lua',
     'typescript',
+    'tsx',
     'yaml',
   },
   sync_install = false,
