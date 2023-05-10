@@ -34,9 +34,6 @@ return packer.startup(function(use)
   use({'gpanders/editorconfig.nvim'})
   use({'phaazon/hop.nvim', branch = 'v2'})
   use({'nvim-lualine/lualine.nvim'})
-  use({'akinsho/bufferline.nvim', tag = 'v3.*', requires = {
-    'nvim-tree/nvim-web-devicons'
-  }})
   use({'numToStr/Comment.nvim'})
   use({'lewis6991/gitsigns.nvim'})
   use({'windwp/nvim-autopairs'})
