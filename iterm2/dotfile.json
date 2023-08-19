@@ -10,7 +10,8 @@
       "Custom Command": "Custom Shell",
       "Command": "\/usr\/local\/bin\/tmux",
 
-      "Normal Font": "HackNerdFontCompleteM-Regular 13",
+      "Normal Font": "HackNFM-Regular 13",
+      "Non Ascii Font": "HackNerdFontMono-Regular 13",
       "ASCII Anti Aliased": true,
       "Use Non-ASCII Font": false,
 
