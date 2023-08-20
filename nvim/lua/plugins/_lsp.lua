@@ -18,6 +18,11 @@ if not cmp_status_ok then
   return
 end
 
+local cmpnvimlsp_status_ok, cmpnvimlsp = pcall(require, 'cmp_nvim_lsp')
+if not cmpnvimlsp_status_ok then
+  return
+end
+
 local on_attach = function(_, bufnr)
   local opt = { noremap = true, silent = true }
   vim.api.nvim_buf_set_keymap(bufnr, 'n', 'K', '<Cmd>lua vim.lsp.buf.hover()<CR>', opt)
@@ -50,6 +55,23 @@ mason_lspconfig.setup_handlers({
     })
   end
 })
+
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+local cmp_capabilities = cmpnvimlsp.default_capabilities(capabilities)
+
+lspconfig.cssls.setup { capabilities = cmp_capabilities }
+lspconfig.gopls.setup { capabilities = cmp_capabilities }
+lspconfig.graphql.setup { capabilities = cmp_capabilities }
+lspconfig.tsserver.setup { capabilities = cmp_capabilities }
+lspconfig.volar.setup {
+  capabilities = cmp_capabilities,
+  filetypes = {
+    'json',
+    'javascript',
+    'typescript',
+    'vue',
+  }
+}
 
 lspconfig.lua_ls.setup({
   settings = {
