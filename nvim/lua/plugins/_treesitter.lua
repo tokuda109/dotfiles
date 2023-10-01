@@ -4,6 +4,7 @@ if not status_ok then
 end
 
 configs.setup({
+  -- Ensure these language parsers are installed
   ensure_installed = {
     'css',
     'dockerfile',

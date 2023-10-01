@@ -38,8 +38,10 @@ end
 
 mason.setup()
 mason_lspconfig.setup({
+  -- List of LSP servers to install
   ensure_installed = {
     'cssls',
+    'html',
     'gopls',
     'graphql',
     'lua_ls',

@@ -1,4 +1,4 @@
-local opt = { noremap = true, silent = true }
+local opt = { silent = true }
 
 -- Remap leader as space key
 vim.g.mapleader = ' '
