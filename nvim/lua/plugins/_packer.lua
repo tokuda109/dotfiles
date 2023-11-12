@@ -17,7 +17,7 @@ return packer.startup(function(use)
   use({'hrsh7th/nvim-cmp'})
   use({'hrsh7th/cmp-nvim-lsp'})
   use({'hrsh7th/cmp-vsnip'})
-  use({'nvim-telescope/telescope.nvim', tag = '0.1.0'})
+  use({'nvim-telescope/telescope.nvim', tag = '0.1.4'})
   use({'nvim-telescope/telescope-file-browser.nvim'})
   use({'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'})
   use({'nvim-neo-tree/neo-tree.nvim', branch = 'v2.x', requires = {
