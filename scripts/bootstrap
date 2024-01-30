@@ -13,7 +13,7 @@ mkdir $CONFIG_DIR
 
 ln -vsf $DOTFILES_ROOT/git                     $CONFIG_DIR/git
 ln -vsf $DOTFILES_ROOT/karabiner               $CONFIG_DIR/karabiner
-ln -vsf $DOTFILES_ROOT/nvim                    $CONFIG_DIR/nvim
+ln -vsf $DOTFILES_ROOT/.config/nvim            $CONFIG_DIR/nvim
 ln -vsf $DOTFILES_ROOT/tmux                    $CONFIG_DIR/tmux
 ln -vsf $DOTFILES_ROOT/fish                    $CONFIG_DIR/fish
 ln -vsf $DOTFILES_ROOT/startship/starship.toml $CONFIG_DIR/starship.toml
