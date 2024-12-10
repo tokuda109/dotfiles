@@ -16,4 +16,10 @@ config.window_close_confirmation = "NeverPrompt"
 
 config.default_prog = { "/usr/local/bin/tmux" }
 
+-- Restore window size at the startup
+wezterm.on("gui-startup", function(cmd)
+  local _, _, window = wezterm.mux.spawn_window(cmd or {})
+  window:gui_window():maximize()
+end)
+
 return config
