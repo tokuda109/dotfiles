@@ -8,6 +8,7 @@ tap 'homebrew/core'
 
 brew 'docker-compose'
 brew 'exa'
+brew 'fd'
 brew 'fish'
 brew 'fzf'
 brew 'ghq'
