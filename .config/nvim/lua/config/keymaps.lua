@@ -9,12 +9,14 @@ vim.keymap.set("n", "<Leader>k", "<C-w>k")
 vim.keymap.set("n", "<Leader>l", "<C-w>l")
 
 -- Cursor movement
-vim.keymap.set("n", "<S-h>", "0")
-vim.keymap.set("n", "<S-l>", "$")
+vim.keymap.set("n", "<S-h>", "^")
+vim.keymap.set("v", "<S-h>", "^")
+vim.keymap.set("n", "<S-l>", "g_")
+vim.keymap.set("v", "<S-l>", "g_")
 
 -- Increment/decrement
 vim.keymap.set("n", "+", "<C-a>")
 vim.keymap.set("n", "-", "<C-x>")
 
 -- Reload init.lua without restarting neovim
-vim.keymap.set('n', '<Leader>r', '<Cmd>source $MYVIMRC<CR> | <Cmd>echo "$MYVIMRC reloaded"<CR>', opt)
+vim.keymap.set("n", "<Leader>r", '<Cmd>source $MYVIMRC<CR> | <Cmd>echo "$MYVIMRC reloaded"<CR>', opt)
