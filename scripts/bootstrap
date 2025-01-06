@@ -12,6 +12,7 @@ fi
 mkdir $CONFIG_DIR
 
 ln -vsf $DOTFILES_ROOT/.config/fish          $CONFIG_DIR/fish
+ln -vsf $DOTFILES_ROOT/.config/ghostty       $CONFIG_DIR/ghostty
 ln -vsf $DOTFILES_ROOT/.config/git           $CONFIG_DIR/git
 ln -vsf $DOTFILES_ROOT/.config/karabiner     $CONFIG_DIR/karabiner
 ln -vsf $DOTFILES_ROOT/.config/nvim          $CONFIG_DIR/nvim
