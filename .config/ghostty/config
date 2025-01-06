@@ -1,3 +1,5 @@
+command = /usr/local/bin/tmux
+
 shell-integration = fish
 
 theme = tokyonight
