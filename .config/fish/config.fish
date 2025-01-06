@@ -1,9 +1,16 @@
 # ==============================================================================
-# Variables
+# Fish shell config
 # ==============================================================================
 
-set -gx EDITOR nvim
-set -gx GIT_EDITOR nvim
+set -U fish_greeting # disable fish greeting
+set -U fish_key_bindings fish_vi_key_bindings
+
+# ==============================================================================
+# Editor config
+# ==============================================================================
+
+set -Ux EDITOR nvim
+set -Ux VISUAL nvim
 
 # ==============================================================================
 # Alias
@@ -21,13 +28,13 @@ set -gx XDG_CONFIG_HOME "$HOME/.config"
 
 # gcloud
 if test -d $(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk
-  set -gx GCLOUD_ROOT_PATH $(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk
+  set -Ux GCLOUD_ROOT_PATH $(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk
 end
 if test -f "$GCLOUD_ROOT_PATH/path.fish.inc"
   source "$GCLOUD_ROOT_PATH/path.fish.inc"
 end
 
-## Go
+# Go
 goenv init - | source
 
 # Node.js
@@ -57,4 +64,4 @@ starship init fish | source
 # ==============================================================================
 
 # Exa Colors
-set -gx EXA_COLORS "fi=36:sn=0:sb=0:uu=0:un=0:da=0"
+set -Ux EXA_COLORS "fi=36:sn=0:sb=0:uu=0:un=0:da=0"
