@@ -17,7 +17,6 @@ ln -vsf $DOTFILES_ROOT/.config/git           $CONFIG_DIR/git
 ln -vsf $DOTFILES_ROOT/.config/karabiner     $CONFIG_DIR/karabiner
 ln -vsf $DOTFILES_ROOT/.config/nvim          $CONFIG_DIR/nvim
 ln -vsf $DOTFILES_ROOT/.config/tmux          $CONFIG_DIR/tmux
-ln -vsf $DOTFILES_ROOT/.config/wezterm       $CONFIG_DIR/wezterm
 ln -vsf $DOTFILES_ROOT/.config/starship.toml $CONFIG_DIR/starship.toml
 
 echo -e 'All installed!'
