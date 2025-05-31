@@ -1,13 +1,7 @@
 cask_args appdir: '/Applications', require_sha: true
 
-tap 'homebrew/bundle'
-tap 'homebrew/cask'
-tap 'homebrew/cask-fonts'
-tap 'homebrew/cask-versions'
-tap 'homebrew/core'
-
 brew 'docker-compose'
-brew 'exa'
+brew 'eza'
 brew 'fd'
 brew 'fish'
 brew 'fzf'
@@ -33,10 +27,12 @@ brew 'tree-sitter'
 brew 'wget'
 brew 'zoxide'
 
+cask '1password'
 cask 'brave-browser'
 cask 'docker'
 cask 'font-hack-nerd-font'
 cask 'ghostty'
+cask 'github'
 cask 'google-chrome'
 cask 'google-cloud-sdk'
 cask 'google-japanese-ime'
