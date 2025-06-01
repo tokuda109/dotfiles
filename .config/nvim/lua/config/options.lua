@@ -33,7 +33,7 @@ vim.opt.breakindent = true
 vim.opt.tabstop = 2
 -- 2 spaces for indent width
 vim.opt.shiftwidth = 2
---
+-- Enable smart tabbing
 vim.opt.smarttab = true
 -- Insert space character
 vim.opt.expandtab = true

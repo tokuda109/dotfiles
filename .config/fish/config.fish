@@ -20,6 +20,8 @@ set -Ux VISUAL nvim
 # Alias
 # ==============================================================================
 
+alias vim "nvim"
+
 alias la "eza --all --icons"
 alias ll "eza --all --icons --long --header"
 

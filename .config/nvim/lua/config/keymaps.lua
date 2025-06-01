@@ -23,4 +23,4 @@ vim.keymap.set("n", "<Tab>", "<Cmd>tabnext<CR>")
 vim.keymap.set("n", "<S-Tab>", "<Cmd>tabprev<CR>")
 
 -- Reload init.lua without restarting neovim
-vim.keymap.set("n", "<Leader>r", '<Cmd>source $MYVIMRC<CR> | <Cmd>echo "$MYVIMRC reloaded"<CR>', opt)
+vim.keymap.set("n", "<Leader>r", '<Cmd>source $MYVIMRC<CR> | <Cmd>echo "$MYVIMRC reloaded"<CR>')
