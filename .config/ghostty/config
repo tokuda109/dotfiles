@@ -1,5 +1,3 @@
-command = /usr/local/bin/fish
-
 shell-integration = fish
 
 theme = tokyonight

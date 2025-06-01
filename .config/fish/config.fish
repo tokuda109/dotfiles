@@ -1,3 +1,7 @@
+if command -q /opt/homebrew/bin/brew
+  eval $(/opt/homebrew/bin/brew shellenv)
+end
+
 # ==============================================================================
 # Fish shell config
 # ==============================================================================
@@ -16,8 +20,8 @@ set -Ux VISUAL nvim
 # Alias
 # ==============================================================================
 
-alias la "exa --all --icons"
-alias ll "exa --all --icons --long --header"
+alias la "eza --all --icons"
+alias ll "eza --all --icons --long --header"
 
 # ==============================================================================
 # Path
