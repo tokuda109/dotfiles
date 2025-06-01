@@ -63,9 +63,5 @@ set fish_color_command brwhite
 
 starship init fish | source
 
-# ==============================================================================
-# Exa
-# ==============================================================================
-
-# Exa Colors
-set -Ux EXA_COLORS "fi=36:sn=0:sb=0:uu=0:un=0:da=0"
+# fish-autols plugin
+set -U autols_cmd ll
