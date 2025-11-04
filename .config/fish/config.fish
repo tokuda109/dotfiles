@@ -9,6 +9,10 @@ end
 set -U fish_greeting # disable fish greeting
 set -U fish_key_bindings fish_vi_key_bindings
 
+if test -f "$FISH_FUNCTION_PATH/fisher.fish"
+  source "$FISH_FUNCTION_PATH/fisher.fish"
+end
+
 # ==============================================================================
 # Editor config
 # ==============================================================================
@@ -64,6 +68,3 @@ set fish_color_command brwhite
 # ==============================================================================
 
 starship init fish | source
-
-# fish-autols plugin
-set -U autols_cmd ll
