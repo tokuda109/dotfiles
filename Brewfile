@@ -28,6 +28,7 @@ brew 'wget'
 brew 'zoxide'
 
 cask '1password'
+cask 'antigravity'
 cask 'brave-browser'
 cask 'cursor'
 cask 'font-hack-nerd-font'
