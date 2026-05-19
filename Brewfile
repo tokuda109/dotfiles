@@ -28,6 +28,7 @@ brew 'wget'
 brew 'zoxide'
 
 cask '1password'
+cask '1password-cli'
 cask 'antigravity'
 cask 'brave-browser'
 cask 'claude-code'

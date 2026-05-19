@@ -50,6 +50,9 @@ if test -f "$GCLOUD_ROOT_PATH/path.fish.inc"
   source "$GCLOUD_ROOT_PATH/path.fish.inc"
 end
 
+# fzf
+fzf --fish | source
+
 # Go
 goenv init - | source
 
@@ -62,6 +65,9 @@ pyenv init - | source
 # zoxide
 zoxide init fish | source
 
+# Starship
+starship init fish | source
+
 # ==============================================================================
 # Color
 # ==============================================================================
@@ -70,7 +76,7 @@ set fish_color_normal  brwhite
 set fish_color_command brwhite
 
 # ==============================================================================
-# Starship
+# Antigravity
 # ==============================================================================
 
-starship init fish | source
+fish_add_path $HOME/.antigravity/antigravity/bin
