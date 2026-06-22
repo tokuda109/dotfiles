@@ -1,10 +1,12 @@
 cask_args appdir: '/Applications', require_sha: true
 
+brew 'agent-browser'
 brew 'docker-compose'
 brew 'eza'
 brew 'fd'
 brew 'fish'
 brew 'fzf'
+brew 'gh'
 brew 'ghq'
 brew 'git'
 brew 'goenv'
@@ -41,3 +43,4 @@ cask 'google-japanese-ime'
 cask 'karabiner-elements'
 cask 'raycast'
 cask 'visual-studio-code@insiders'
+cask 'zed'
