@@ -18,9 +18,9 @@ vim.keymap.set("v", "<S-l>", "g_")
 vim.keymap.set("n", "+", "<C-a>")
 vim.keymap.set("n", "-", "<C-x>")
 
--- Tab navigation
-vim.keymap.set("n", "<Tab>", "<Cmd>tabnext<CR>")
-vim.keymap.set("n", "<S-Tab>", "<Cmd>tabprev<CR>")
+-- Buffer navigation
+vim.keymap.set("n", "<Tab>", "<Cmd>BufferLineCycleNext<CR>", { desc = "Next Buffer" })
+vim.keymap.set("n", "<S-Tab>", "<Cmd>BufferLineCyclePrev<CR>", { desc = "Prev Buffer" })
 
 -- Reload init.lua without restarting neovim
 vim.keymap.set("n", "<Leader>r", '<Cmd>source $MYVIMRC<CR> | <Cmd>echo "$MYVIMRC reloaded"<CR>')
