@@ -1,0 +1,10 @@
+[init]
+	defaultBranch = main
+[ghq]
+	root = ~/Sources
+[gpg]
+	program = /opt/homebrew/bin/gpg
+[commit]
+	gpgsign = true
+[include]
+	path = ./.gitconfig.local

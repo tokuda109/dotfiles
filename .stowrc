@@ -1,0 +1,6 @@
+--ignore=.github
+--ignore=.stowrc
+--ignore=docs
+--ignore=macos
+--ignore=Brewfile
+--ignore=README.md
